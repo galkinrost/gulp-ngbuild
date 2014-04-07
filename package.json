@@ -5,6 +5,9 @@
         "test",
         "index.js"
     ],
+    "scripts": {
+        "test":"cd test && mocha gulp-ngbuild.js"
+    },
     "dependencies": {
         "gulp-util": "^2.2.14",
         "ngbuild": "0.0.43",
