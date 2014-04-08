@@ -1,21 +1,21 @@
 {
-    "name": "gulp-ngbuild",
-    "version": "0.0.1",
-    "files": [
-        "test",
-        "index.js"
-    ],
-    "scripts": {
-        "test":"cd test && mocha gulp-ngbuild.js"
-    },
-    "dependencies": {
-        "gulp-util": "^2.2.14",
-        "ngbuild": "0.0.43",
-        "through2": "^0.4.1"
-    },
-    "devDependencies": {
-        "mocha": "^1.18.2",
-        "should": "^3.3.0",
-        "vinyl": "^0.2.3"
-    }
+  "name": "gulp-ngbuild",
+  "version": "0.0.2",
+  "files": [
+    "test",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "cd test && mocha gulp-ngbuild.js"
+  },
+  "dependencies": {
+    "gulp-util": "^2.2.14",
+    "ngbuild": "0.0.43",
+    "through2": "^0.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "should": "^3.3.0",
+    "vinyl": "^0.2.3"
+  }
 }
