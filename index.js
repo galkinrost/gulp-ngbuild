@@ -17,6 +17,7 @@ CustomWritable.prototype._write = function (chunk, encoding, done) {
 
 
 module.exports = function () {
+
     return through.obj(function (file, enc, done) {
         var self = this;
 
@@ -32,10 +33,9 @@ module.exports = function () {
 
         try {
             var contents = [];
-
             var readable = ngbuild.getReadable({
-                content: file.contents,
-                src: path.relative(__dirname, file.path)
+                content: file.contents.toString(),
+                src: '/' + path.relative(path.join(__dirname, '../../'), file.path)
             });
 
             readable.on('end', function () {
