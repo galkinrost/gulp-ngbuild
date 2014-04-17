@@ -1,7 +1,7 @@
 {
   "name": "gulp-ngbuild",
   "description": "gulp plugin for ngbuild",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "files": [
     "test",
     "index.js"
