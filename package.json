@@ -7,11 +7,11 @@
     "index.js"
   ],
   "scripts": {
-    "test": "cd test && mocha gulp-ngbuild.js"
+    "test": "cd test && NODE_ENV=test mocha gulp-ngbuild.js"
   },
   "dependencies": {
     "gulp-util": "^2.2.14",
-    "ngbuild": "1.0.1",
+    "ngbuild": "1.0.2",
     "through2": "^0.4.1"
   },
   "devDependencies": {

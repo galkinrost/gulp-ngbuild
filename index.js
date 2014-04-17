@@ -30,12 +30,11 @@ module.exports = function () {
             this.emit('error', new gutil.PluginError('gulp-ng-build', 'Streaming not supported'));
             return done();
         }
-
         try {
             var contents = [];
             var readable = ngbuild.getReadable({
                 content: file.contents.toString(),
-                src: '/' + path.relative(path.join(__dirname, '../../'), file.path)
+                src: '/' + (process.env.NODE_ENV === 'test' ? file.path : path.relative(path.join(__dirname, '../../'), file.path))
             });
 
             readable.on('end', function () {
